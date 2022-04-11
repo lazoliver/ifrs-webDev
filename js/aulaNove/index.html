@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Aula Nove</title>
+</head>
+<body>
+    <h1>Eventos de Input.</h1>
+    <form name="formTest" onSubmit="return submeti()" onReset="resetei()">
+    <label for="nome">Nome: </label>
+    <input type="text" id="nome" name="nome"
+        onBlur="saiDoCampo()"
+        onChange="mudei()"
+        onFocus="entreiNoCampo()"
+        onSelect="selecionei()"
+        onKeyDown="teclaBaixo()"
+        onKeyUp="teclaCima()">
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+        <br>
+    <h2 id="log"></h2>
+</body>
+</html>
